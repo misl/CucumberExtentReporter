@@ -87,7 +87,7 @@ public class ExtentCucumberFormatter implements Reporter, Formatter {
     }
 
     public void write(String s) {
-        extent.close();
+        scenarioTest.log(LogStatus.INFO, s);
     }
 
     public void syntaxError(String s, String s1, List<String> list, String s2, Integer integer) {
@@ -140,7 +140,7 @@ public class ExtentCucumberFormatter implements Reporter, Formatter {
     }
 
     public void close() {
-
+        extent.close();
     }
 
     public void eof() {
