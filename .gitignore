@@ -2,3 +2,4 @@
 *.iml
 target
 output
+*.DS_Store
